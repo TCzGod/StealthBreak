@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Rajdhani', sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.animate-glow {
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px rgba(5, 217, 232, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 20px rgba(5, 217, 232, 0.8), 0 0 30px rgba(255, 42, 109, 0.6);
+  }
+}
+
+.font-cyber {
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.bg-cyber-black {
+  background-color: #121212;
+}
+
+.bg-cyber-gray {
+  background-color: #1e1e1e;
+}
+
+.text-cyber-pink {
+  color: #ff2a6d;
+}
+
+.text-cyber-blue {
+  color: #05d9e8;
+}
+
+.text-cyber-purple {
+  color: #d300c5;
+}
+
+.text-cyber-green {
+  color: #01ffc3;
+}
+
+.border-cyber-blue {
+  border-color: #05d9e8;
+}
+
+.border-cyber-pink {
+  border-color: #ff2a6d;
+}
+
+.border-cyber-purple {
+  border-color: #d300c5;
+}
+
+.border-cyber-green {
+  border-color: #01ffc3;
+}
+
+.bg-gradient-to-r {
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+
+.from-cyber-pink {
+  --tw-gradient-from: #ff2a6d;
+  --tw-gradient-to: rgba(255, 42, 109, 0);
+}
+
+.to-cyber-blue {
+  --tw-gradient-to: #05d9e8;
+}
+
+.bg-clip-text {
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.text-transparent {
+  color: transparent;
+}
